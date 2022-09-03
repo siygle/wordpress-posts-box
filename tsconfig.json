@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "./src/",
+    "outDir": "./dist/",
+    "module": "CommonJS",
+    "target": "ES2020",
+    "sourceMap": false,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    "build",
+    "scripts",
+    "test/",
+    "test-data/",
+    "dist",
+    "**/*.d.ts"
+  ]
+}
