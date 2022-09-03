@@ -1,0 +1,9 @@
+name: "wordpress-posts-box"
+author: "sy"
+description: "Show the WordPress latest posts"
+branding:
+  icon: "activity"
+  color: "green"
+runs:
+  using: "node16"
+  main: "dist/index.js"

@@ -4,7 +4,7 @@
   "description": "a simple tool to create your wordpress blog posts pinned gist",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && ncc build dist/index.js --minify && find dist/ -type f -not -name 'index.js' -delete"
   },
   "author": "sy",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "@types/text-table": "~0.2.2",
     "@typescript-eslint/eslint-plugin": "~5.36.1",
     "@typescript-eslint/parser": "~5.36.1",
+    "@vercel/ncc": "~0.34.0",
     "eslint": "~8.23.0"
   },
   "dependencies": {
